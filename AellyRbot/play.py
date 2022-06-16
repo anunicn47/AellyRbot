@@ -231,9 +231,8 @@ async def videoplay(client, m: Message):
                     Q = 720
                     await huehue.edit(
                         "`Only 720, 480, 360 Allowed` \n`Now streaming in 720p`"
-                    )Sekarang Streaming masuk 720p`"
                     )
-            try:
+             try:
                 if replied.video:
                     songname = replied.video.file_name[:70]
                 elif replied.document:
