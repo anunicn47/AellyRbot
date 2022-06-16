@@ -224,20 +224,35 @@ async def videoplay(client, m: Message):
             if len(m.command) < 2:
                 Q = 720
             else:
+
                 pq = m.text.split(None, 1)[1]
+
                 if pq == "720" or "480" or "360":
+
                     Q = int(pq)
+
                 else:
+
                     Q = 720
+
                     await huehue.edit(
-                        "`Only 720, 480, 360 Allowed` \n`Now streaming in 720p`"
+
+                        "`Hanya 720, 480, 360 Diizinkan` \n`Sekarang Streaming masuk 720p`"
+
                     )
-             try:
+
+            try:
+
                 if replied.video:
+
                     songname = replied.video.file_name[:70]
+
                 elif replied.document:
+
                     songname = replied.document.file_name[:70]
+
             except BaseException:
+
                 songname = "Video File"
 
             if chat_id in QUEUE:
