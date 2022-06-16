@@ -26,7 +26,7 @@
 
 <details>
 
-<summary><b>🔗 String Session</b></summary>
+<summary><b>🔗 Heroku Web</b></summary>
 
 <br>
 
